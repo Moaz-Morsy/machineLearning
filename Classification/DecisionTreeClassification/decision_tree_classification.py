@@ -75,3 +75,9 @@ plt.xlabel('Age')
 plt.ylabel('Salary')
 plt.legend()
 plt.show()
+
+# Plotting the Decision Tree and saving it in the current working directory
+from sklearn import tree
+from os import system
+tree.export_graphviz(classifier, out_file = 'tree.dot')
+system("dot -Tpng tree.dot -o tree.png")
