@@ -76,6 +76,7 @@ plt.ylabel('Salary')
 plt.legend()
 plt.show()
 
+# Before plotting the Decision Tree remove the feature scaling from the dataset
 # Plotting the Decision Tree and saving it in the current working directory
 from sklearn import tree
 from os import system
