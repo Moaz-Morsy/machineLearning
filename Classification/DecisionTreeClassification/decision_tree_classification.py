@@ -77,6 +77,8 @@ plt.legend()
 plt.show()
 
 # Before plotting the Decision Tree remove the feature scaling from the dataset
+# To be able to create the png from the dot file, make sure graphviz is installed in your system
+# In conda environment: conda install python-graphviz
 # Plotting the Decision Tree and saving it in the current working directory
 from sklearn import tree
 from os import system
